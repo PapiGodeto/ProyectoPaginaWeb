@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="FormularioRegistro.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FormularioRegistro</title>
+</head>
+<body>
+ <header>
+   <nav>
+       <ul>
+           <li><a href="inicio.html">Inicio</a></li>
+           <li><a href="historia.html">Historia del lugar</a></li>
+           <li><a href="lugaresturisticos.html">Lugares turísticos</a></li>
+           <li><a href="comidatipica.html">Comida típica</a></li>
+           <li><a href="contacto.html">Contacto</a></li>
+           <li><a href="FormularioRegistro.html">Registro</a></li>
+       </ul>
+   </nav>
+</header>
+ <form id="FormularioRegistro" action="FormularioRegistro.php" method="post">
+   <div class="grid-container">
+     <label for="nombre">Nombre:</label>
+     <input type="text" id="nombre" name="nombre">
+     <label for="apellido">Apellido:</label>
+     <input type="text" id="apellido" name="apellido">
+     <label for="edad">Edad:</label>
+     <input type="number" id="edad" name="edad">
+     <label for="sexo">Sexo:</label>
+     <select id="sexo" name="sexo">
+       <option value="masculino">Masculino</option>
+       <option value="femenino">Femenino</option>
+     </select>
+     <label for="ciudad">Ciudad:</label>
+     <input type="text" id="ciudad" name="ciudad">
+     <label for="celular">Celular:</label>
+     <input type="tel" id="celular" name="celular">
+     <label for="transporte">Transporte:</label>
+     <select id="transporte" name="transporte">
+       <option value="si">Sí</option>
+       <option value="no">No</option>
+     </select>
+     <label for="camisa">Camisa:</label>
+     <select id="camisa" name="camisa">
+       <option value="si">Sí</option>
+       <option value="no">No</option>
+     </select>
+     <label for="talla">Talla:</label>
+     <input type="text" id="talla" name="talla">
+     <label for="comentarios">Comentarios:</label>
+     <textarea id="comentarios" name="comentarios"></textarea>
+     <input type="submit" value="Enviar" onclick="return validarFormulario()">
+   </div>
+ </form>   
+ <footer>
+  <p>&copy; SAN LUIS POTOSI LA HUASTECA POTOSINA</p>
+</footer>
+ <script src="FormularioRegistro.js"></script> 
+</body>
+</html>
